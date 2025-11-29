@@ -42,5 +42,20 @@ class main {
     }
 
     private static void outp (double[][] s) {
+        for (int j = 0; j < 5; j++) {
+            for (int k = 0; k < 13; k++) {
+                System.out.printf("%10.5f", s[j][k]);
+                if (s[j][k] > 0) {
+                    System.out.printf(" ");
+                }
+                if (k < 12) {
+                    System.out.printf("\t");
+                }
+            }
+            if (j < 4) {
+                System.out.printf("\n");
+            }
+        }
+        System.out.println("");
     }
 }
